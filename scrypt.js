@@ -19,7 +19,8 @@ JokeAPI.getJokes({
 };
   
 btn.addEventListener("click", () => { JokeAPI.getJokes({
-    jokeType: "single"
+    jokeType: "single",
+    language: "es"
   })
     .then((r) => r.json())
     .then((data) => {
