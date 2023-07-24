@@ -1,7 +1,8 @@
 const btn = document.querySelector("[data-chiste-btn]");
 
 JokeAPI.getJokes({
-    jokeType: "single"
+    jokeType: "single",
+    language: "es"
   })
     .then((r) => r.json())
     .then((data) => {
